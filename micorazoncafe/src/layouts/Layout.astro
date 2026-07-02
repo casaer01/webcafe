@@ -8,15 +8,13 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Mi Corazon Cafe</title>
 	</head>
-	<body>
-			<nav class=" bg-white w-2/3 flex  relative justify-evenly items-center mx-1 px-8 h-20 md:mx-auto">
-				<div class="grid grid-cols-10 gap-2 flex-auto"> <!-- TODO: convert grid to flex -->
-					<div class="col-span-2 font-serif">Home</div>
-					<div class="col-span-2 font-serif">About Us</div>
-					<div class="col-span-2 font-serif">ICON</div>
-					<div class="col-span-2 font-serif">Socials</div>
-					<div class="col-span-1 font-serif">Contact</div>
-				</div>
+	<body class="mb-5">
+			<nav class=" bg-white w-2/3 flex relative justify-center flex-row items-center mx-1 px-8 h-20 md:mx-auto">
+					<div class="basis-1/5 text-center font-serif">Home</div>
+					<div class="basis-1/5 text-center font-serif">About Us</div>
+					<div class="basis-1/5 text-center font-serif">ICON</div>
+					<div class="basis-1/5 text-center font-serif">Socials</div>
+					<div class="basis-1/5 text-center font-serif">Contact</div>
 			</nav>
 
 		<slot />
