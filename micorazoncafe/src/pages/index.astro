@@ -1,23 +1,33 @@
 ---
 // import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
 import "../styles/global.css";
+import threedrinks from "../images/threedrinks.jpg";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-<!-- component -->
-
+  <!-- component -->
+  <div
+    class="overflow-hidden bg-white border border-gray-200 rounded-xl shadow-md transform transition-all duration-500 hover:shadow-lg hover:scale-101 relative group md:m-8 m-1 flex justify-center"
+  >
+    <Image
+      src={threedrinks}
+      alt={"three drinks in a cafe"}
+      class="rounded-xl flex justify-center"
+    />
+  </div>
 </Layout>
 
 <style>
-	nav {
-		border-radius:0 0 25px 25px;
-	}
-	.fontlink {
-		font-family: 'Instrument Serif', serif;
-		font-size: 1.5rem;
-	}
+  nav {
+    border-radius: 0 0 25px 25px;
+  }
+  .fontlink {
+    font-family: "Instrument Serif", serif;
+    font-size: 1.5rem;
+  }
 </style>

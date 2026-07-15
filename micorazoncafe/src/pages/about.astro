@@ -1,7 +1,10 @@
 ---
 // import Welcome from '../components/Welcome.astro';
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
+
+import threecoffee from "../images/locationPreview.png";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -10,19 +13,34 @@ import "../styles/global.css";
 <Layout>
   <!-- component -->
   <section class="flex">
-    <div class="w-64 flex-none"></div>
+    <div class="w-64 flex-initial"></div>
     <div
-      class="overflow-hidden bg-white border border-gray-200 rounded-xl shadow-md transform transition-all duration-500 hover:shadow-lg hover:scale-105 relative group basis-2/3 md:m-10 m-1 w-64 flex-1"
+      class="overflow-hidden bg-white border border-gray-200 rounded-xl shadow-md transform transition-all duration-500 hover:shadow-lg hover:scale-102 relative group basis-2/3 md:m-10 m-1 w-64 flex-1"
     >
-      <div
-        class="absolute inset-0 bg-gradient-to-br from-gray-100 to-white opacity-0 transition-opacity duration-500 group-hover:opacity-30 blur-md"
-      >
-      </div>
-      <div class="p-6 z-10 relative flex justify-center">
-        <h1>About Us</h1>
+      <h1 class="flex justify-center">About us</h1>
+      <div class="flex flex-row">
+        <div class="p-6 z-10 flex flex-col basis-1/3">
+          <p>
+            Experience the heart of Mexico in Pilsen! Our cafe serves up
+            delicious drinks and a welcoming vibe that will keep you coming back
+            for more.
+          </p>
+          <p>
+            Indulge in our delicious range of hot and cold Mexican coffee
+            drinks. Experience rich flavors and refreshing options that delight
+            every palate!
+          </p>
+        </div>
+        <div class="p-6 z-10 basis-2/3">
+          <Image
+            src={threecoffee}
+            alt={"three coffee in cafe"}
+            style={{ filter: "contrast(125%) saturate(150%)" }}
+          />
+        </div>
       </div>
     </div>
-    <div class="w-64 flex-none"></div>
+    <div class="w-64 flex-initial"></div>
   </section>
 </Layout>
 
