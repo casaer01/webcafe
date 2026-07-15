@@ -1,6 +1,6 @@
 ---
 // import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -8,10 +8,22 @@ import "../styles/global.css";
 ---
 
 <Layout>
-<!-- component -->
-	<h1>About Us</h1>
+  <!-- component -->
+  <section class="flex">
+    <div class="w-64 flex-none"></div>
+    <div
+      class="overflow-hidden bg-white border border-gray-200 rounded-xl shadow-md transform transition-all duration-500 hover:shadow-lg hover:scale-105 relative group basis-2/3 md:m-10 m-1 w-64 flex-1"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-gray-100 to-white opacity-0 transition-opacity duration-500 group-hover:opacity-30 blur-md"
+      >
+      </div>
+      <div class="p-6 z-10 relative flex justify-center">
+        <h1>About Us</h1>
+      </div>
+    </div>
+    <div class="w-64 flex-none"></div>
+  </section>
 </Layout>
 
-<style>
-
-</style>
+<style></style>
