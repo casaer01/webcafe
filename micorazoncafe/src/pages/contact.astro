@@ -1,17 +1,15 @@
 ---
 // import Welcome from '../components/Welcome.astro';
+import { Image } from "astro:assets";
+import locationpreview from "../images/locationPreview.png";
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
   <!-- component -->
 
   <section class="flex flex-row md:m-12">
-    <!-- From Uiverse.io by ahmedyasserdev -->
     <div
       class="overflow-hidden bg-white border border-gray-200 rounded-xl shadow-md transform transition-all duration-500 hover:shadow-lg hover:scale-105 relative group basis-1/3 md:m-8 m-1"
     >
@@ -27,6 +25,7 @@ import "../styles/global.css";
           pellentesque sem placerat in id. Placerat in id cursus mi pretium
           tellus duis. Pretium tellus duis convallis tempus leo eu aenean.
         </p>
+        <Image src={locationpreview} alt="building of the cafe" />
       </div>
     </div>
 
